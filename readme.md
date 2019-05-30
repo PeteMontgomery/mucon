@@ -5,7 +5,7 @@ muCon - Microservices, DDD & Software Architecture
 Day 1
 =====
 
-Keynote - Socio-Technique and Structure,
+Keynote - Socio-Technique and Structure.
 Michael C. Feathers
 ------------------------------------------------------------
 
@@ -34,7 +34,7 @@ System design - social & technical
 - Be aware of underlying forces
 - Code and social structure have limits - work with them, not against them
 
-Microservices from Day One
+Microservices from Day One.
 Richard Rodger
 ------------------------------------------
 - Is it a good idea to start with microservices?
@@ -58,8 +58,8 @@ Richard Rodger
 - They use one MongoDB (haven't needed to separate DB per service)
 - Microservices need to be components
 
-Three Years of Lessons from Running Potentially Malicious Code Inside Container
-Ben Hall (Katacoda -- check this out for learning new techs )
+Three Years of Lessons from Running Potentially Malicious Code Inside Container.
+Ben Hall (Katacoda - check this out)
 --------------------------------------------------------------------------------
 - Docker security 101 overview
 - cgroups - give containers resource limits
@@ -71,25 +71,26 @@ Ben Hall (Katacoda -- check this out for learning new techs )
   - read only filesystems
   - block egress
 
-18 Heuristics to Discover your Contexts Boundaries
+18 Heuristics to Discover your Contexts Boundaries.
 Cyrille Martraire
 ---------------------------------------------------
-This was really really useful, real life examples of DDD
-Author has a book coming out
+**This was really really useful, real life examples of DDD**
+*Author has a book coming out*
+
 - Microservices need DDD to save them from disaster
 - How to partition your system / how do we define boundaries 
 - Easy way
- - by layer
- - by technology
- - by entity (product / user / whatever)
+  - by layer
+  - by technology
+  - by entity (product / user / whatever)
 - better way
-- DDD by Eric Evans of course:
- - functional area (bounded context)
- Eg
-  - catalog
-  - recommendation
-  - billing
-  - shopping cart
+  - DDD by Eric Evans of course:
+  - functional area (bounded context)
+ - Eg
+   - catalog
+   - recommendation
+   - billing
+   - shopping cart
 how will things change (if will change independently)
 - names
 - independence implies some duplication
@@ -100,17 +101,18 @@ how will things change (if will change independently)
 - potato diagrams
 - event storming (group business events together)
 
-Event Driven Collaboration,
+Event Driven Collaboration.
 Ian Cooper
 --------------------------
 - Microservices - at least two conceptions: Tiny (cell-like) vs ABC (larger)
 
-Lightning Talk: How to Explain Microservices to your Grandma
+Lightning Talk: How to Explain Microservices to your Grandma.
 Francesco Renzi
 -------------------------------------------------------------
+Ok...
 
-A Hitchhikers Guide to Improving Observability in a Hybrid Universe 
-Alex Close (Elastic co)
+A Hitchhikers Guide to Improving Observability in a Hybrid Universe.
+Alex Close (Elastic)
 --------------------------------------------------------------------
 - Ebay stores 1 petabyte daily in Elastic
 - Space satellite applications
