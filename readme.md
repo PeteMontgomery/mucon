@@ -34,7 +34,7 @@ System design - social & technical
 - Be aware of underlying forces
 - Code and social structure have limits - work with them, not against them
 
-Microservices from Day One,
+Microservices from Day One
 Richard Rodger
 ------------------------------------------
 - Is it a good idea to start with microservices?
@@ -58,7 +58,7 @@ Richard Rodger
 - They use one MongoDB (haven't needed to separate DB per service)
 - Microservices need to be components
 
-Three Years of Lessons from Running Potentially Malicious Code Inside Container,
+Three Years of Lessons from Running Potentially Malicious Code Inside Container
 Ben Hall (Katacoda -- check this out for learning new techs )
 --------------------------------------------------------------------------------
 - Docker security 101 overview
@@ -71,7 +71,7 @@ Ben Hall (Katacoda -- check this out for learning new techs )
   - read only filesystems
   - block egress
 
-18 Heuristics to Discover your Contexts Boundaries,
+18 Heuristics to Discover your Contexts Boundaries
 Cyrille Martraire
 ---------------------------------------------------
 This was really really useful, real life examples of DDD
@@ -105,7 +105,7 @@ Ian Cooper
 --------------------------
 - Microservices - at least two conceptions: Tiny (cell-like) vs ABC (larger)
 
-Lightning Talk: How to Explain Microservices to your Grandma,
+Lightning Talk: How to Explain Microservices to your Grandma
 Francesco Renzi
 -------------------------------------------------------------
 
@@ -120,15 +120,19 @@ Alex Close (Elastic co)
 Day 2
 =====
 
-Keynote: Getting to DDD: Pragmatic or Principled? 
+Keynote: Getting to DDD: Pragmatic or Principled?
 Julie Lerman
 -------------------------------------------------
+- DDD purists / terminology could be shutting people out from learning DDD
+- Passing knowledge on to your team - how? It's too much. 
+- 
 
 Takeaways
 ---------
-- Docker is massive (obviously)
-- React is massive
+- Docker is still massive (obviously)
+- React is still massive
 - Kubernetes is massive. Red Hat OpenShift is a commercial offering based on Kubernetes for enterprises.
-
-
-
+- The infra / ops side of things is massive, overwhelming, skills shortage 
+- In many ways the industry is still trying to get to DDD
+- Microservices are rebranded SOA, which is rebranded webservices. People are still making the same mistakes
+- Big emoji poo --> lots of small emoji poos
