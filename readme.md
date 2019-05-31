@@ -17,11 +17,11 @@ System design - social & technical
 - Coding 'heroes' - how to prevent them destroying the team 
 - Pareto distribution. (80/20 contributions tend to happen in teams and open source contrib.
   - Can we work *with* it to make it non-toxic.
- - natural consequence (small number of highly productive / )
- - is it problem? how much?
- - even when using agile? 
- - what's dangerous is what if it's the wrong person? obvious risk if they leave
- - make a project that looks like it came from one person's mind (mob programming - we already to this a little!) 
+  - natural consequence (small number of highly productive / )
+  - is it problem? how much?
+  - even when using agile?
+  - what's dangerous is what if it's the wrong person? obvious risk if they leave
+  - make a project that looks like it came from one person's mind (mob programming - we already to this a little!)
 - Galileo - structure must change as we scale
 - Graph theory - cliques.
 - SRP falls apart as we scale - this can drive structure
@@ -37,6 +37,7 @@ System design - social & technical
 Microservices from Day One.
 Richard Rodger
 ------------------------------------------
+
 - Is it a good idea to start with microservices?
 - Wrote 'The Tao of Microservice' [Manning]
 - Javascript being crappy pushed towards microservices to stay sane
@@ -61,6 +62,7 @@ Richard Rodger
 Three Years of Lessons from Running Potentially Malicious Code Inside Container.
 Ben Hall (Katacoda - check this out)
 --------------------------------------------------------------------------------
+
 - Docker security 101 overview
 - cgroups - give containers resource limits
 - kill things with a timeout (things should be idempotent)
@@ -74,6 +76,7 @@ Ben Hall (Katacoda - check this out)
 18 Heuristics to Discover your Contexts Boundaries.
 Cyrille Martraire
 ---------------------------------------------------
+
 **This was really really useful, real life examples of DDD**
 *Author has a book coming out*
 
@@ -86,11 +89,11 @@ Cyrille Martraire
 - better way
   - DDD by Eric Evans of course:
   - functional area (bounded context)
- - Eg
-   - catalog
-   - recommendation
-   - billing
-   - shopping cart
+- Eg
+  - catalog
+  - recommendation
+  - billing
+  - shopping cart
 how will things change (if will change independently)
 - names
 - independence implies some duplication
@@ -104,16 +107,19 @@ how will things change (if will change independently)
 Event Driven Collaboration.
 Ian Cooper
 --------------------------
+
 - Microservices - at least two conceptions: Tiny (cell-like) vs ABC (larger)
 
 Lightning Talk: How to Explain Microservices to your Grandma.
 Francesco Renzi
 -------------------------------------------------------------
-Ok...
+
+- Ok...
 
 A Hitchhikers Guide to Improving Observability in a Hybrid Universe.
 Alex Close (Elastic)
 --------------------------------------------------------------------
+
 - Ebay stores 1 petabyte daily in Elastic
 - Space satellite applications
 - Elastic stack
@@ -125,16 +131,83 @@ Day 2
 Keynote: Getting to DDD: Pragmatic or Principled?
 Julie Lerman
 -------------------------------------------------
-- DDD purists / terminology could be shutting people out from learning DDD
-- Passing knowledge on to your team - how? It's too much. 
-- 
+
+- DDD purists / terminology could be shutting people out from learning DDD?
+- Passing knowledge on to your team - how? It's too much to learn DDD first. 
+- DDD, DDD, DDD. Nothing has changed!
+  - Entity - object with unique identity
+  - Value object - FP record
+  - Aggregate - transactionally bound
+  - Aggregate root - object which controls access to aggregate
+- Event storming, event storming. Best intro to DDD.
+- Read Eric Evans again.
+
+Preparing for a future Microservices journey.
+Susanne Kaiser
+--------------------------------------------
+
+- Bleughh...
+
+Strategic Design – The Joy of Multiple Models.
+Henning Schwentner
+---------------------------------------------
+
+- Domain storytelling - whiteboard style
+- Naturally leads to the One Big Model problem - the central class in the domain
+- Go to "modulith" first before building a distributed system.
+  1. Model your domain
+  2. Split it up into several models
+  3. (Maybe distribute these model)
+
+DDD: Strategic Patterns and Microservices by Example.
+Erik Ashepa
+----------------------------------------------------
+
+- Fiverr tech stack. Used to use Ruby on Rails
+- Added memcache, redis, nginx, rabbitmq to optimise
+- Standard scaling challenges. Microservice to the rescue.
+- Honeymoon period
+  - user-service
+  - requirements-service (what kind of gig a user wants)
+  - blah-service
+  - (all written from scratch, owned by a single team, no need to wait for the main deploy queue which had got slow)
+  - each service encapsulated data, so could use joins. serveral api calls and join in memory
+  - Look into Kafka
+  - they essentially used DD and CQRS
+- Fiverr is now on the fourth version of architecture. Happy they started with monolith!
+
+Workshop: Show me the Kubernetes.
+Salman Iqbal and Lewis Denham-Parry
+-----------------------------------
+
+- ASIDE: are AWS using green energy??
+- all developers workm in infrastructure now!
+- https://github.com/CloudNativeWales/ShowMeTheKubernetes
+- GitOps. Everything goes via Git. Git is source of truth for whole infrastructure. (No hand-done stuff).
+- JenkinsX
+
+Keynote: Making a Case for Conceptual Integrity.
+Diana Montalion
+------------------------------------------------
+
+- Conceptual integrity is the most important consideration in systems design
+
+Day 3
+=====
+
+Keynote: Crossing the River by Feeing the Stones.
+Simon Wardley
+-------------------------------------------------
+
 
 Takeaways
 ---------
+
 - Docker is still massive (obviously)
 - React is still massive
-- Kubernetes is massive. Red Hat OpenShift is a commercial offering based on Kubernetes for enterprises.
+- Kubernetes is massive. (Red Hat OpenShift is a commercial offering based on Kubernetes for enterprises.)
 - The infra / ops side of things is massive, overwhelming, skills shortage 
-- In many ways the industry is still trying to get to DDD
+- In many ways the industry is still just trying to get to DDD
 - Microservices are rebranded SOA, which is rebranded webservices. People are still making the same mistakes
 - Big emoji poo --> lots of small emoji poos
+- **Read DDD, Eric Evans again!**
