@@ -199,6 +199,31 @@ Keynote: Crossing the River by Feeing the Stones.
 Simon Wardley
 -------------------------------------------------
 
+- Inventor of Wardley maps
+- DevOps, Kubernetes etc will be around for a decade or whatever, but:
+- Serverless is the future
+
+How To Build a Social Network Entirely on Serverless.
+Yan Cui (AWS Serverless Hero)
+-----------------------------------------------------
+
+- "Netflix for sports"
+- 1000000+ concurrent viewers
+- Fall back to containers when they can't use serverless
+- Unpredictable huge spikes, so had to keep ~5% utilisation
+- technical debt is not the same as technical mess!
+- 95% saving Vs EC2
+- made everything publish state change events using Kinesis
+- defined their messages using AsyncAPI
+
+From Capabilities to Services: Modelling for Business-IT Alignment.
+Trond Hjorteland
+-----------------
+
+- "Business Capabilities"
+- Strategic part of DDD is often ignored over the Tactical
+- a service is the technical authority for a specific business capabilities
+
 
 Takeaways
 ---------
@@ -209,5 +234,5 @@ Takeaways
 - The infra / ops side of things is massive, overwhelming, skills shortage 
 - In many ways the industry is still just trying to get to DDD
 - Microservices are rebranded SOA, which is rebranded webservices. People are still making the same mistakes
-- Big emoji poo --> lots of small emoji poos
+- Big emoji poo --> lots of small emoji poos https://twitter.com/dqo/status/584057756958728193
 - **Read DDD, Eric Evans again!**
