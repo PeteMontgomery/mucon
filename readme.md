@@ -39,7 +39,7 @@ Richard Rodger
 ------------------------------------------
 
 - Is it a good idea to start with microservices?
-- Wrote 'The Tao of Microservice' [Manning]
+- Wrote 'The Tao of Microservices' [Manning]
 - Javascript being crappy pushed towards microservices to stay sane
 - Standard enterprise project built with muServices first
 - "Most people are using React" for front end but they used Vue
@@ -165,7 +165,7 @@ Erik Ashepa
 
 - Fiverr tech stack. Used to use Ruby on Rails
 - Added memcache, redis, nginx, rabbitmq to optimise
-- Standard scaling challenges. Microservice to the rescue.
+- Standard scaling challenges. Microservices to the rescue.
 - Honeymoon period
   - user-service
   - requirements-service (what kind of gig a user wants)
@@ -181,7 +181,7 @@ Salman Iqbal and Lewis Denham-Parry
 -----------------------------------
 
 - ASIDE: are AWS using green energy??
-- all developers workm in infrastructure now!
+- all developers work in infrastructure now!
 - https://github.com/CloudNativeWales/ShowMeTheKubernetes
 - GitOps. Everything goes via Git. Git is source of truth for whole infrastructure. (No hand-done stuff).
 - JenkinsX
@@ -200,8 +200,9 @@ Simon Wardley
 -------------------------------------------------
 
 - Inventor of Wardley maps
+- Wardley maps are used by UK gov, GDS and for High Speed Rail 2
 - DevOps, Kubernetes etc will be around for a decade or whatever, but:
-- Serverless is the future
+- Serverless is the future!
 
 How To Build a Social Network Entirely on Serverless.
 Yan Cui (AWS Serverless Hero)
@@ -222,8 +223,7 @@ Trond Hjorteland
 
 - "Business Capabilities"
 - Strategic part of DDD is often ignored over the Tactical
-- a service is the technical authority for a specific business capabilities
-
+- a service is the technical authority for a specific business capability
 
 Takeaways
 ---------
